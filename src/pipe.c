@@ -29,8 +29,6 @@ int main(int argc, char** argv) {
 	}
 
 	/* Redirecciono la salida estandar al pipe */
-	//dup2(fd[1], STDOUT_FILENO);
-	//close(fd[0]);
 
 	if (proc1 == 0) {
 		/* Proceso 1: lee las lineas que contengan la palabra pasada por parametro, 
